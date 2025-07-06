@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google BERT Models - Extracted Notebook Plots</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: 200px repeat(5, 1fr); /* 1 header column + 5 model columns */
+            gap: 5px;
+            margin-bottom: 30px; 
+        }
+        .grid-header { 
+            display: contents; 
+            font-weight: bold; 
+        }
+        .grid-corner { 
+            grid-column: 1; 
+            background-color: #f5f5f5; 
+            padding: 10px; 
+            font-weight: bold; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+        }
+        .model-header { 
+            padding: 10px; 
+            font-weight: bold; 
+            text-align: center; 
+            background-color: #e0e0e0; 
+            border: 1px solid #ddd; 
+        }
+        .grid-row { 
+            display: contents; 
+        }
+        .plot-type-header { 
+            padding: 10px; 
+            font-weight: bold; 
+            text-align: right; 
+            background-color: #f5f5f5; 
+            border: 1px solid #ddd; 
+        }
+        .grid-cell { 
+            padding: 8px; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+        }
+        .empty-cell { 
+            background-color: #f9f9f9; 
+        }
+        .missing-plot { 
+            color: #999; 
+            font-style: italic; 
+            padding: 20px; 
+        }
+        img { max-width: 100%; max-height: 250px; }
+        h1, h2 { color: #333; }
+        nav { background-color: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+        nav a { padding: 10px; margin-right: 10px; text-decoration: none; color: #333; }
+        nav a:hover { background-color: #ddd; }
+        nav a.active { background-color: #007BFF; color: white; }
+        .page { display: none; }
+        .page:target { display: block; }
+        #page1 { display: block; }
+    </style>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none'
+            });
+            document.getElementById(pageId).style.display = 'block';
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active')
+            });
+            document.querySelector('nav a[href="#' + pageId + '"]').classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#page1" class="active" onclick="showPage('page1')">Notebook Plots</a>
+        <a href="#page2" onclick="showPage('page2')">CSV Analysis</a>
+    </nav>
+    
+    <div id="page1" class="page">
+        <h1>Google BERT Models - Extracted Notebook Plots</h1>
+        <p>Total plots extracted: 100 from 5 notebooks across 5 model folders</p>
+
+<div class="grid-container">
+    <div class="grid-header">
+        <div class="grid-corner">Plot Type \ Model</div>
+
+        <div class="model-header">L2-H128-A2</div>
+    
+        <div class="model-header">L4-H256-A4</div>
+    
+        <div class="model-header">L4-H512-A8</div>
+    
+        <div class="model-header">L8-H512-A8</div>
+    
+        <div class="model-header">L12-H768-A12</div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 5 Output 1</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell5_output1.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell5_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell5_output1.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell5_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell5_output1.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell5_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell5_output1.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell5_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell5_output1.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell5_output1.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 5 Output 2</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell5_output2.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell5_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell5_output2.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell5_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell5_output2.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell5_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell5_output2.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell5_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell5_output2.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell5_output2.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 5 Output 3</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell5_output3.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell5_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell5_output3.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell5_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell5_output3.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell5_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell5_output3.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell5_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell5_output3.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell5_output3.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 5 Output 4</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell5_output4.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell5_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell5_output4.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell5_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell5_output4.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell5_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell5_output4.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell5_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell5_output4.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell5_output4.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 1</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output1.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output1.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output1.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output1.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output1.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output1.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 2</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output2.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output2.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output2.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output2.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output2.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output2.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 3</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output3.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output3.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output3.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output3.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output3.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output3.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output3.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 4</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output4.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output4.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output4.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output4.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output4.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output4.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 5</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output5.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output5.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output5.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output5.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output5.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output5.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 6</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output6.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output6.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output6.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output6.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output6.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output6.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output6.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output6.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output6.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output6.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 7</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output7.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output7.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output7.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output7.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output7.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output7.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output7.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output7.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output7.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output7.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 8</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output8.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output8.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output8.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output8.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output8.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output8.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output8.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output8.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output8.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output8.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 9</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output9.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output9.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output9.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output9.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output9.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output9.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output9.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output9.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output9.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output9.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 10</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output10.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output10.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output10.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output10.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output10.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output10.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output10.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output10.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output10.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output10.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 12</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output12.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output12.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output12.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output12.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output12.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output12.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output12.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output12.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output12.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output12.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 6 Output 14</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell6_output14.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell6_output14.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell6_output14.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell6_output14.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell6_output14.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell6_output14.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell6_output14.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell6_output14.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell6_output14.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell6_output14.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 7 Output 1</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell7_output1.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell7_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell7_output1.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell7_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell7_output1.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell7_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell7_output1.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell7_output1.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell7_output1.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell7_output1.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 7 Output 2</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell7_output2.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell7_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell7_output2.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell7_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell7_output2.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell7_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell7_output2.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell7_output2.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell7_output2.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell7_output2.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 7 Output 4</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell7_output4.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell7_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell7_output4.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell7_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell7_output4.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell7_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell7_output4.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell7_output4.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell7_output4.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell7_output4.png">
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="plot-type-header">Cell 7 Output 5</div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-2_H-128_A-2/bert_uncased_L-2_H-128_A-2_0_0001_cell7_output5.png" alt="bert_uncased_L-2_H-128_A-2_0_0001_cell7_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-256_A-4/bert_uncased_L-4_H-256_A-4_0_0001_cell7_output5.png" alt="bert_uncased_L-4_H-256_A-4_0_0001_cell7_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-4_H-512_A-8/bert_uncased_L-4_H-512_A-8_0_0001_cell7_output5.png" alt="bert_uncased_L-4_H-512_A-8_0_0001_cell7_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-8_H-512_A-8/bert_uncased_L-8_H-512_A-8_0_0001_cell7_output5.png" alt="bert_uncased_L-8_H-512_A-8_0_0001_cell7_output5.png">
+        </div>
+    
+        <div class="grid-cell">
+            <img src="extracted_plots/bert_uncased_L-12_H-768_A-12/bert_uncased_L-12_H-768_A-12_0_0001_cell7_output5.png" alt="bert_uncased_L-12_H-768_A-12_0_0001_cell7_output5.png">
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+    
+    <div id="page2" class="page">
+        <h1>Google BERT Models - CSV Analysis</h1>
+        <p>Analysis of training and validation metrics across different BERT models</p>
+        
+        
+        <style>
+            .plot-section {
+                margin-bottom: 30px;
+            }
+            .overview-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+            .overview-grid img {
+                max-width: 100%;
+            }
+            .heatmap-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                margin-bottom: 30px;
+            }
+            .model-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            .plot-item {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: center;
+                background-color: #f9f9f9;
+            }
+            .plot-item img {
+                max-width: 100%;
+                height: auto;
+            }
+            .plot-item p {
+                font-size: 0.9em;
+                margin-top: 8px;
+            }
+            .empty-plot {
+                background-color: #f0f0f0;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #888;
+            }
+            h2 {
+                margin-top: 30px;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+            }
+        </style>
+        
+        <div class="plot-section">
+            <h2>Performance Overview</h2>
+            <div class="overview-grid">
+                <div class="plot-item">
+                    <img src="plots/model_performance_overview.png" alt="Model Performance Overview">
+                    <p>Comparison of loss, accuracy, and embedding values across all models</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="plot-section">
+            <h2>Layer Value Heatmaps by Epoch</h2>
+            <div class="heatmap-grid">
+                <div class="plot-item">
+                    <img src="plots/layer_values_heatmap_epoch50.png" alt="Layer Values at Epoch 50">
+                    <p>Layer Values at Epoch ~50</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/layer_values_heatmap_epoch100.png" alt="Layer Values at Epoch 100">
+                    <p>Layer Values at Epoch ~100</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/layer_values_heatmap_epoch150.png" alt="Layer Values at Epoch 150">
+                    <p>Layer Values at Epoch ~150</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/layer_values_heatmap_epoch200.png" alt="Layer Values at Epoch 200">
+                    <p>Layer Values at Epoch ~200</p>
+                </div>
+                
+            <div class="plot-item">
+                <img src="plots/layer_values_heatmap_final.png" alt="Layer Values at Final Epoch">
+                <p>Layer Values at Final Epoch</p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="plot-section">
+            <h2>Individual Metrics</h2>
+            <div class="model-grid">
+                <!-- Loss Row -->
+                <div class="plot-item plot-header">
+                    <h3>Loss</h3>
+                </div>
+                <div class="plot-item plot-header">
+                    <h3>Accuracy</h3>
+                </div>
+                <div class="plot-item plot-header">
+                    <h3>Embedding</h3>
+                </div>
+                <div class="plot-item plot-header">
+                    <h3>All Metrics</h3>
+                </div>
+                <div class="plot-item plot-header">
+                    <h3>Comparison</h3>
+                </div>
+                
+                <!-- Plot cells -->
+                <div class="plot-item">
+                    <img src="plots/loss_comparison.png" alt="Loss Comparison">
+                    <p>Loss Across Epochs</p>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/accuracy_comparison.png" alt="Accuracy Comparison">
+                    <p>Accuracy Across Epochs</p>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/emb_comparison.png" alt="Embedding Comparison">
+                    <p>Embedding Values Across Epochs</p>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/model_performance_overview.png" alt="Model Performance Overview">
+                    <p>All Metrics Overview</p>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/layer_values_heatmap_final.png" alt="Layer Values Comparison">
+                    <p>Layer Values at Final Epoch</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="plot-section">
+            <h2>Layer Analysis (Log Scale)</h2>
+            <div class="plot-grid">
+        
+                <div class="plot-item">
+                    <img src="plots/L1_comparison.png" alt="L1 Comparison">
+                    <p>Layer 1 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L2_comparison.png" alt="L2 Comparison">
+                    <p>Layer 2 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L3_comparison.png" alt="L3 Comparison">
+                    <p>Layer 3 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L4_comparison.png" alt="L4 Comparison">
+                    <p>Layer 4 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L5_comparison.png" alt="L5 Comparison">
+                    <p>Layer 5 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L6_comparison.png" alt="L6 Comparison">
+                    <p>Layer 6 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L7_comparison.png" alt="L7 Comparison">
+                    <p>Layer 7 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L8_comparison.png" alt="L8 Comparison">
+                    <p>Layer 8 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L9_comparison.png" alt="L9 Comparison">
+                    <p>Layer 9 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L10_comparison.png" alt="L10 Comparison">
+                    <p>Layer 10 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L11_comparison.png" alt="L11 Comparison">
+                    <p>Layer 11 Values Across Epochs by Model</p>
+                </div>
+                
+                <div class="plot-item">
+                    <img src="plots/L12_comparison.png" alt="L12 Comparison">
+                    <p>Layer 12 Values Across Epochs by Model</p>
+                </div>
+                
+            </div>
+        </div>
+        
+<div class="stats-section">
+            <h2>Model Performance Statistics</h2>
+            
+            <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th>Model</th>
+                        <th>Final Epoch</th>
+                        <th>Final Loss</th>
+                        <th>Final Accuracy</th>
+                        <th>Min Loss</th>
+                        <th>Max Accuracy</th>
+                        <th>Final Emb</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                    <tr>
+                        <td>bert_uncased_L-12_H-768_A-12</td>
+                        <td>200</td>
+                        <td>0.0020</td>
+                        <td>1.0000</td>
+                        <td>0.0000</td>
+                        <td>1.0000</td>
+                        <td>14.7828</td>
+                    </tr>
+                
+                    <tr>
+                        <td>bert_uncased_L-2_H-128_A-2</td>
+                        <td>200</td>
+                        <td>0.5122</td>
+                        <td>0.9815</td>
+                        <td>0.0000</td>
+                        <td>1.0000</td>
+                        <td>12.5788</td>
+                    </tr>
+                
+                    <tr>
+                        <td>bert_uncased_L-4_H-256_A-4</td>
+                        <td>200</td>
+                        <td>0.0525</td>
+                        <td>1.0000</td>
+                        <td>0.0000</td>
+                        <td>1.0000</td>
+                        <td>16.6861</td>
+                    </tr>
+                
+                    <tr>
+                        <td>bert_uncased_L-4_H-512_A-8</td>
+                        <td>200</td>
+                        <td>0.0074</td>
+                        <td>1.0000</td>
+                        <td>0.0000</td>
+                        <td>1.0000</td>
+                        <td>18.0558</td>
+                    </tr>
+                
+                    <tr>
+                        <td>bert_uncased_L-8_H-512_A-8</td>
+                        <td>200</td>
+                        <td>0.0055</td>
+                        <td>1.0000</td>
+                        <td>0.0000</td>
+                        <td>1.0000</td>
+                        <td>19.8014</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            
+            
+        </div>
+        
+        <div class="csv-section">
+            <h2>Consolidated CSV Files</h2>
+            <ul>
+                <li><strong>Combined data:</strong> <a href="csv_data/all_models.csv">all_models.csv</a></li>
+                <li><strong>Statistics summary:</strong> <a href="csv_stats/model_stats_summary.csv">model_stats_summary.csv</a></li>
+                <li><strong>Detailed statistics:</strong> <a href="csv_stats/model_stats.json">model_stats.json</a></li>
+                    <li><strong>bert_uncased_L-12_H-768_A-12:</strong> <a href="csv_data/bert_uncased_L-12_H-768_A-12.csv">bert_uncased_L-12_H-768_A-12.csv</a></li>
+                <li><strong>bert_uncased_L-2_H-128_A-2:</strong> <a href="csv_data/bert_uncased_L-2_H-128_A-2.csv">bert_uncased_L-2_H-128_A-2.csv</a></li>
+                <li><strong>bert_uncased_L-4_H-256_A-4:</strong> <a href="csv_data/bert_uncased_L-4_H-256_A-4.csv">bert_uncased_L-4_H-256_A-4.csv</a></li>
+                <li><strong>bert_uncased_L-4_H-512_A-8:</strong> <a href="csv_data/bert_uncased_L-4_H-512_A-8.csv">bert_uncased_L-4_H-512_A-8.csv</a></li>
+                <li><strong>bert_uncased_L-8_H-512_A-8:</strong> <a href="csv_data/bert_uncased_L-8_H-512_A-8.csv">bert_uncased_L-8_H-512_A-8.csv</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
