@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Google BERT Analysis Explorer</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="p-3">
+
+  <h1 class="mb-4">Google BERT Analysis Explorer</h1>
+
+  <ul class="nav nav-tabs" id="folderTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <!-- still call this tab "google" -->
+      <button
+        class="nav-link active"
+        id="tab-google"
+        data-bs-toggle="tab"
+        data-bs-target="#pane-google"
+        type="button"
+        role="tab"
+      >google</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="tab-google001"
+        data-bs-toggle="tab"
+        data-bs-target="#pane-google001"
+        type="button"
+        role="tab"
+      >google0.01</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="tab-google0001"
+        data-bs-toggle="tab"
+        data-bs-target="#pane-google0001"
+        type="button"
+        role="tab"
+      >google0.001</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="tab-report"
+        data-bs-toggle="tab"
+        data-bs-target="#pane-report"
+        type="button"
+        role="tab"
+      >Analysis Report</button>
+    </li>
+  </ul>
+
+  <div class="tab-content border border-top-0 p-3" id="folderTabsContent">
+    <!-- 1) “google” tab still, but src → actual folder google0.00001 -->
+    <div
+      class="tab-pane fade show active"
+      id="pane-google"
+      role="tabpanel"
+      aria-labelledby="tab-google"
+    >
+      <iframe
+        src="google0.00001/index.html"
+        style="width:100%; height:700px; border:none;"
+      ></iframe>
+    </div>
+
+    <!-- the others stay the same -->
+    <div
+      class="tab-pane fade"
+      id="pane-google001"
+      role="tabpanel"
+      aria-labelledby="tab-google001"
+    >
+      <iframe
+        src="google0.01/index.html"
+        style="width:100%; height:700px; border:none;"
+      ></iframe>
+    </div>
+
+    <div
+      class="tab-pane fade"
+      id="pane-google0001"
+      role="tabpanel"
+      aria-labelledby="tab-google0001"
+    >
+      <iframe
+        src="google0.001/index.html"
+        style="width:100%; height:700px; border:none;"
+      ></iframe>
+    </div>
+
+    <div
+      class="tab-pane fade"
+      id="pane-report"
+      role="tabpanel"
+      aria-labelledby="tab-report"
+    >
+      <iframe
+        src="consolidation/google_bert_analysis.html"
+        style="width:100%; height:700px; border:none;"
+      ></iframe>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
