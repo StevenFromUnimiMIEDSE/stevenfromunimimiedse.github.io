@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Google BERT Analysis Explorer</title>
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap 5 CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -13,6 +13,7 @@
 <body class="p-3">
   <h1 class="mb-4">Google BERT Analysis Explorer</h1>
 
+  <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="folderTabs" role="tablist">
     <li class="nav-item" role="presentation">
       <button
@@ -22,7 +23,11 @@
         data-bs-target="#pane-google"
         type="button"
         role="tab"
-      >google</button>
+        aria-controls="pane-google"
+        aria-selected="true"
+      >
+        google
+      </button>
     </li>
     <li class="nav-item" role="presentation">
       <button
@@ -32,7 +37,11 @@
         data-bs-target="#pane-google001"
         type="button"
         role="tab"
-      >google0.01</button>
+        aria-controls="pane-google001"
+        aria-selected="false"
+      >
+        google0.01
+      </button>
     </li>
     <li class="nav-item" role="presentation">
       <button
@@ -42,22 +51,31 @@
         data-bs-target="#pane-google0001"
         type="button"
         role="tab"
-      >google0.001</button>
+        aria-controls="pane-google0001"
+        aria-selected="false"
+      >
+        google0.001
+      </button>
     </li>
     <li class="nav-item" role="presentation">
       <button
         class="nav-link"
-        id="tab-report"
+        id="tab-global"
         data-bs-toggle="tab"
-        data-bs-target="#pane-report"
+        data-bs-target="#pane-global"
         type="button"
         role="tab"
-      >Analysis Report</button>
+        aria-controls="pane-global"
+        aria-selected="false"
+      >
+        Global Report
+      </button>
     </li>
   </ul>
 
+  <!-- Tab panes -->
   <div class="tab-content border border-top-0 p-3" id="folderTabsContent">
-    <!-- 1) “google” tab still, but now embeds your real report -->
+    <!-- google -->
     <div
       class="tab-pane fade show active"
       id="pane-google"
@@ -66,11 +84,12 @@
     >
       <iframe
         src="google/consolidation/google_bert_analysis.html"
-        style="width:100%; height:700px; border:none;"
+        style="width:100%; height:80vh; border:none;"
+        title="google report"
       ></iframe>
     </div>
 
-    <!-- 2) google0.01 folder -->
+    <!-- google0.01 -->
     <div
       class="tab-pane fade"
       id="pane-google001"
@@ -78,12 +97,13 @@
       aria-labelledby="tab-google001"
     >
       <iframe
-        src="google0.01/index.html"
-        style="width:100%; height:700px; border:none;"
+        src="google0.01/consolidation/google_bert_analysis.html"
+        style="width:100%; height:80vh; border:none;"
+        title="google0.01 report"
       ></iframe>
     </div>
 
-    <!-- 3) google0.001 folder -->
+    <!-- google0.001 -->
     <div
       class="tab-pane fade"
       id="pane-google0001"
@@ -91,26 +111,28 @@
       aria-labelledby="tab-google0001"
     >
       <iframe
-        src="google0.001/index.html"
-        style="width:100%; height:700px; border:none;"
+        src="google0.001/consolidation/google_bert_analysis.html"
+        style="width:100%; height:80vh; border:none;"
+        title="google0.001 report"
       ></iframe>
     </div>
 
-    <!-- 4) standalone HTML under consolidation if you still want this separate -->
+    <!-- global top‐level report -->
     <div
       class="tab-pane fade"
-      id="pane-report"
+      id="pane-global"
       role="tabpanel"
-      aria-labelledby="tab-report"
+      aria-labelledby="tab-global"
     >
       <iframe
         src="consolidation/google_bert_analysis.html"
-        style="width:100%; height:700px; border:none;"
+        style="width:100%; height:80vh; border:none;"
+        title="Global analysis report"
       ></iframe>
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap 5 JS bundle -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   ></script>
